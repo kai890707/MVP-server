@@ -9,6 +9,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # 创建一个目录来挂载用户的 PHP 应用程序
 WORKDIR /app
-
+EXPOSE 80
 # 启动 Nginx 和 PHP-FPM
 CMD ["supervisord", "--nodaemon"]
